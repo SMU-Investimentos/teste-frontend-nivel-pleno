@@ -1,0 +1,61 @@
+/* Default sttyles */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  color: #3a3a3a;
+}
+
+.container {
+  width: 860px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.fullscreen {
+  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.fullscreen:nth-child(1) {
+  background-color: #DCEDC8;
+}
+
+.fullscreen:nth-child(2) {
+  background-color: #E1BEE7;
+}
+
+/* Utilidades */
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt {
+  margin-top: 24px;
+}
+
+.ml {
+  margin-left: 24px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+.flex.row {
+  flex-direction: row;
+}
+
+.flex.grow-1 {
+  flex-grow: 1;
+}

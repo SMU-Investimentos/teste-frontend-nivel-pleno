@@ -1,0 +1,40 @@
+.tabs .header {
+  display: flex;
+}
+
+.tabs .header .tab {
+  flex-grow: 1;
+  text-align: center;
+  padding: 24px 12px;
+  background-color: #8BC34A;
+  transition: background-color 120ms ease;
+  font-size: 1.1rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.tabs .header .tab.active {
+  background-color: #689F38;
+  border-bottom: 4px solid #207100;
+}
+
+.tabs .content {
+  background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: flex;
+  height: 300px;
+  padding: 20px;
+  overflow: hidden;
+  border-width: 0px 1px 1px 1px;
+  border-color: #ececec;
+  border-style: solid;
+}
+
+.tabs .content .tab-content {
+  display: none;
+}
+
+.tabs .content .tab-content.active {
+  display: block;
+}

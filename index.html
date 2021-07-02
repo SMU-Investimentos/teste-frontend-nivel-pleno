@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de Proeficiência em Javascript nível Pleno</title>
+  <link rel="stylesheet" href="styles.css"></head>
+  <link rel="stylesheet" href="tabs.css"></head>
+  <link rel="stylesheet" href="movies.css"></head>
+</head>
+<body>
+  <section class="fullscreen">
+    <div class="container">
+      <h1>Componente de Tabs</h1>
+      <p>
+        O objetivo deste teste é implementar um sistema de tabs usando recursos nativos do javascript.
+      </p>
+
+      <div id="my-tabs" class="tabs">
+        <div class="header">
+          <div class="tab active" data-target="content-1"> Tab 1 </div>
+          <div class="tab" data-target="content-2"> Tab 2 </div>
+          <div class="tab" data-target="content-3"> Tab 3 </div>
+        </div>
+
+        <div class="content">
+          <div id="content-1" class="tab-content active">
+            Conteúdo da Tab 1
+          </div>
+
+          <div id="content-2" class="tab-content">
+            Conteúdo da Tab 2
+          </div>
+
+          <div id="content-3" class="tab-content">
+            Conteúdo da Tab 3
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="fullscreen">
+    <div class="container">
+      <h1>Buscar filmes pelo título</h1>
+      <p>
+        O objetivo deste teste é buscar filmes pelo título usando uma API REST e exibir na tela as
+        informações do filme.
+      </p>
+
+      <form id="movies-form">
+        <div class="flex">
+          <div class="flex grow-1">
+            <input type="text" class="input" id="search" value="The Godfather" placeholder="Digite aqui o título do filme...">
+          </div>
+          <div>
+            <input type="submit" class="btn" value="Buscar">
+          </div>
+        </div>
+      </form>
+
+      <section id="movie">
+        <div class="flex">
+          <div>
+            <img id="poster" src="" alt="">
+          </div>
+
+          <div class="ml">
+            <h2 class="mt-0" id="title"></h2>
+            <p id="plot"></p>
+            <p class="mt">
+              <b>Diretor:</b> <span id="director"></span>
+            </p>
+            <p class="mt">
+              <b>Gênero:</b> <span id="genre"></span>
+            </p>
+            <p class="mt">
+              <b>Ano:</b> <span id="year"></span>
+            </p>
+            <p class="mt">
+              <b>Roteirista:</b> <span id="writer"></span>
+            </p>
+            <p class="mt">
+              <b>Estrelas:</b> <span id="actors"></span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="not-found">
+        <p>
+          Nenhum filme encontrado.
+        </p>
+      </section>
+    </div>
+  </section>
+
+  <script src="tabs.js"></script>
+  <script src="movies.js"></script>
+</body>
+</html>
